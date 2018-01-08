@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <title>Welcome to Elitsa's portfolio website</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+            padding: 9% 12% 1% 12%;
+            margin: 0;
+            font-size: 1.7em;
+        }
+        
+        h2 {
+            text-align: center;
+            padding: 4% 0% 1% 0%;
+            margin: 0;
+            font-size: 2em;
+        }
+        
+        .link {
+            font-size: 1.3em;
+            font-family: Gruppo, Rajdhani, sans-serif;  
+            text-align: center;
+            margin: 0;
+        }
+        
+        img, video {
+            width: 100%;
+            max-width: 44%;
+            padding: 1.2% 28% 1.2% 28%;
+            margin: 0;
+        }
+        
+        
+        
+        p {
+            width: 100%;
+            max-width: 44%;
+            padding: 1.2% 28% 1.2% 28%;
+            font-family: Rajdhani, Gruppo, sans-serif;
+            font-size: 1.1em;
+            font-weight: 900;
+            margin: 0;
+        }
+        
+        
+        
+        
+        @media screen and (max-width:800px){
+            p, img {
+                max-width: 70%;
+                padding: 2% 15% 1% 15%;
+            }
+        }
+        
+        @media screen and (max-width:420px){
+            p, img {
+                max-width: 84%;
+                padding: 2% 8% 1% 8%;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            .link {
+                font-size: 1.2em;
+            }
+        }
+        
+    </style>
+    </head>
+
+
+
+    <body>
+
+        <nav>
+            <div id="menuToggle">
+
+                <input type="checkbox" />
+            <div class="fixed-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="me.html">ABOUT ME</a></li>
+              <li class="dropdown">
+                  <a href="projects.html" class="dropbtn" id="a1">PROJECTS</a>
+                  <div class="dropdown-content">
+                      <a href="responsive-website.html">Responsive Website</a>
+                      <a href="redesigned-website.html">Redesigned Website</a>
+                      <a href="simple-anim.html">Simple Animation</a>
+                      <a href="sprite-sheet-anim.html">Sprite-sheet Animation</a>
+                      <a href="interactive-anim.html">Interactive animation</a>
+                      <a href="projectpool-1.html">ProjectPool 1</a>
+                      <a href="projectpool-2.html">ProjectPool 2</a>
+                      <a href="interactive-trailer.html">Interactive trailer</a>
+                      <a href="digital-business.html">Digital Business</a>
+                      <a href="video-1.html">Video 1: Urban living</a>
+                      <a href="video-2.html">Video 2: City walk</a>
+                  </div>
+              </li>
+              <li><a href="contacts.html" id="a2">CONTACTS</a></li>
+            </ul>
+            </div>
+        </nav>     
+
+
+        <main>
+            <h1>Video #1: Urban Madness</h1>
+            
+            <p class="link"><a href="https://www.youtube.com/watch?v=eeqVaDPi-UY&feature=youtu.be" >Link of video in YouTube.</a></p>
+            
+            <video preload="auto" controls>
+              <source src="images/Group_2_Urban_Life.mp4" type="video/mp4">
+            </video>
+            
+            <p>We chose for topic of this project the urban life of Denmark’s capital. Though short, the assignment was interesting. We decided to film the dynamic life of Copenhagen citizens through different angles. The final product is a beautiful video consisted of timelapses, which further emphasizes on the business in our everyday lives. </p>
+            
+            
+            
+            
+            
+            
+        <p style="padding-bottom: 5em"></p>   
+        </main>
+    
+<footer class="footer-grid"> 
+        <img src="design/compass-transparent.png" alt="My logo - 8 point compass rose">
+        <div class="footer-contacts">
+            <p style="margin-bottom: 8px"> Find me on: </p>
+            <p> Facebook: Elitsa Raycheva </p>
+            <p> Instagram: elitzca </p>
+            <p> Email: elitzcar@gmail.com </p>
+        </div>
+        <div>
+            <p id="copyrights"> &copy; 2018 Elitsa Raycheva, All rights reserved.</p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

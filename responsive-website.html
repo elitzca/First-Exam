@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <title>Welcome to Elitsa's portfolio website</title>
+    <style>
+        
+        body {
+            background-color: #474546;
+        }
+       
+        h1 {
+            text-align: center;
+            padding: 3.2em 0 0.5em 0;
+            font-size: 2em;
+            max-width: 100%;
+        }
+        
+        .link {
+            font-size: 1.1em;
+            font-family: Gruppo, Rajdhani, sans-serif;  
+            text-align: center;
+            background-color: #FACDDC;
+            max-width: 100%;
+            padding: 0.1em 0;
+            margin: 0 10%;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-gap: 0;
+        }
+        
+         img {
+            width: 100%;
+            max-width: 80%;
+            padding: 4% 0% 3% 20%;
+            margin: 0;
+        }
+        
+        main p {
+            font-family: Rajdhani, Gruppo, sans-serif;
+            font-size: 1.1em;
+            font-weight: 700;
+            max-width: 70%;
+            padding: 4% 23% 0% 7% ;
+            margin: 0;
+        }
+        
+        
+        
+        @media screen and (max-width:800px){
+           .grid-container {
+            grid-template-columns: auto;
+            }
+            
+            h1 {
+            padding: 1.4em 0 1em 0;
+            font-size: 2.4em;
+            }
+            
+            img {
+            max-width: 70%;
+            padding: 4% 15% 3% 15%;
+            }
+            
+            main p {
+            padding: 4% 15% 0% 15% ;
+            }
+        }
+        
+        
+    
+    </style>
+</head>
+
+    
+    
+<body>
+    
+    <nav>
+        <div id="menuToggle">
+            
+            <input type="checkbox" />
+        <div class="fixed-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="me.html">ABOUT ME</a></li>
+          <li class="dropdown">
+              <a href="projects.html" class="dropbtn" id="a1">PROJECTS</a>
+              <div class="dropdown-content">
+                  <a href="responsive-website.html">Responsive Website</a>
+                  <a href="redesigned-website.html">Redesigned Website</a>
+                  <a href="simple-anim.html">Simple Animation</a>
+                  <a href="sprite-sheet-anim.html">Sprite-sheet Animation</a>
+                  <a href="interactive-anim.html">Interactive animation</a>
+                  <a href="projectpool-1.html">ProjectPool 1</a>
+                  <a href="projectpool-2.html">ProjectPool 2</a>
+                  <a href="interactive-trailer.html">Interactive trailer</a>
+                  <a href="digital-business.html">Digital Business</a>
+                  <a href="video-1.html">Video 1: Urban living</a>
+                  <a href="video-2.html">Video 2: City walk</a>
+              </div>
+          </li>
+          <li><a href="contacts.html" id="a2">CONTACTS</a></li>
+        </ul>
+        </div>
+    </nav>     
+   
+    
+    <main>
+        
+        <h1> Responsive Website: Pixel Art</h1>
+        
+        <p class="link" ><a href="http://elitzca.eu/kea/01-web/responsive/responsive-website/index.html" >Link to the Website</a></p>
+        
+    <div class="grid-container">  
+        
+        <img src="images/z-a1.png" alt="The home page and design page of my Pixel Art website viewed on an iPad and iPhone">
+        <div>
+            <p> This was my first encounter to the world of Multimedia Designers. It was a big challenge since everything was completely new for me.  The result was quite pleasing back then, though now with my current knowledge and abilities I would do it in a completely different way.</p>
+
+            <p>The website has one break point at 30em, making it suitable for phone screens and tablets. For the palette of the website I chose bright  and vivid secondary and tertiary colors. I found appropriate  the combination of light colors contrasted by some strong ones. In terms of  font for my website  I chose  the sans-serif Corbel. While still being fully legible and readable parts of the numbers go bellow the baseline  giving it a playful and artistic look.  Being A-symmetrical  the column grid in the tablet version with two uneven in size columns  makes the design more appealing to the eye. Another design principles that are found on the website are consistency and similarity. </p>
+        </div>
+    </div> 
+        
+        
+        
+    <p style="padding-bottom: 5em"></p>   
+        </main>
+    
+<footer class="footer-grid"> 
+        <img src="design/compass-transparent.png" alt="My logo - 8 point compass rose">
+        <div class="footer-contacts">
+            <p style="margin-bottom: 8px"> Find me on: </p>
+            <p> Facebook: Elitsa Raycheva </p>
+            <p> Instagram: elitzca </p>
+            <p> Email: elitzcar@gmail.com </p>
+        </div>
+        <div>
+            <p id="copyrights"> &copy; 2018 Elitsa Raycheva, All rights reserved.</p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

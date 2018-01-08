@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <title>Welcome to Elitsa's portfolio website</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+            padding: 9% 20% 1.2% 20%;
+            margin: 0;
+            font-size: 3.1em;
+        }
+        
+        div.container-grid {
+            display: block;
+            grid-template-columns: 20% 20% 20%;
+            margin: 0 20% 0 20%;
+            padding: 0;
+            grid-gap: 0%;
+        }
+        
+        img {
+            width: 100%;
+            max-width: 30%;
+        }
+        
+        p {
+            font-family:  Rajdhani; 
+            font-size: 1.5em;
+            text-align: center;
+            padding: 0;
+            margin: 0 0 10% 0;
+        }
+           
+        .title-grid{
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            margin: 0 20% 0 20%;
+            padding: 0;
+            grid-gap: 0%;
+            width: 100%;
+            max-width: 90%;
+        }
+        
+        .title-grid h2 {
+            font-size: 1.4em;
+            text-align: center;
+        }
+        
+        @media screen and (max-width:1100px){
+            img {
+                max-width: 40%;
+                padding: 2% 4%;
+            }
+            #center-me {
+                padding: 2% 29%;
+                margin-bottom: 7%;
+            }
+            #space{
+                display: none;
+            }
+            
+            div.container-grid {
+            grid-template-columns: 30% 30% 30%;
+            margin: 0 5% 0 5%;
+            }
+            
+            .title-grid {
+               grid-template-columns: 30% 30% 30%;
+                padding: 0;
+                margin: 0 4% 7% 6%;
+            }
+            
+            .title-grid h2 {
+                font-size: 1.9em;
+            }
+        }
+        
+        @media screen and (max-width:420px){
+            h1{
+                font-size: 2em;
+            }
+            
+            p{
+                font-size: 1em;
+            }
+            img {
+                max-width: 50%;
+                padding: 2% 25%;
+            }
+            
+            .title-grid {
+                display: block;
+            }
+            
+            .title-grid h2 {
+                font-size: 1em;
+                padding: 0.6em;
+            }
+            
+            #center-me {
+                transform: translateX(-3.5%);
+            }
+        }
+ /*********** ANIMATIONS ***********/ 
+        .rotate1 {
+            animation: rotateMe1 1.2s ease-in-out ;
+        }
+        
+        @keyframes rotateMe1 {
+        to { transform: rotateX(360deg);}
+        }
+        
+        /******/
+        .rotate2 {
+            animation: rotateMe2 1.2s ease-out ;
+        }
+        
+        @keyframes rotateMe2 {
+             to { transform: rotateZ(360deg);}
+        }
+        /******/
+        .rotate3 {
+            animation: rotateMe3 1.2s ease-in-out ;
+        }
+        
+        @keyframes rotateMe3 {
+            to { transform: rotateY(360deg);}
+        }
+        
+    </style>
+    </head>
+
+
+
+    <body>
+
+        <nav>
+            <div id="menuToggle">
+
+                <input type="checkbox" />
+            <div class="fixed-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="me.html">ABOUT ME</a></li>
+              <li class="dropdown">
+                  <a href="projects.html" class="dropbtn" id="a1">PROJECTS</a>
+                  <div class="dropdown-content">
+                      <a href="responsive-website.html">Responsive Website</a>
+                      <a href="redesigned-website.html">Redesigned Website</a>
+                      <a href="simple-anim.html">Simple Animation</a>
+                      <a href="sprite-sheet-anim.html">Sprite-sheet Animation</a>
+                      <a href="interactive-anim.html">Interactive animation</a>
+                      <a href="projectpool-1.html">ProjectPool 1</a>
+                      <a href="projectpool-2.html">ProjectPool 2</a>
+                      <a href="interactive-trailer.html">Interactive trailer</a>
+                      <a href="digital-business.html">Digital Business</a>
+                      <a href="video-1.html">Video 1: Urban living</a>
+                      <a href="video-2.html">Video 2: City walk</a>
+                  </div>
+              </li>
+              <li><a href="contacts.html" id="a2">CONTACTS</a></li>
+            </ul>
+            </div>
+        </nav>     
+
+
+        <main>
+            <h1> Contacts </h1>
+            <p >/click on the images to be redirected/</p>
+            
+            <div class="container-grid">
+                <a href="https://www.facebook.com/elitzca.raycheva" class="parent">
+                    <img class="spin1" src="images/zzcontacts-a1-new.png" alt="picture with link to me facebook profile.">
+                </a>
+                
+                <a href="https://www.instagram.com/elitzca/?hl=en" class="parent">
+                    <img class="spin2" src="images/zzcontacts-a2-new.png" alt="picture with link to me instagram profile.">
+                </a>
+
+                <img id="center-me" class="spin3" src="images/zzcontacts-a3-new.png" alt="picture with link to my gmail.">
+           </div>
+            
+            <div class="title-grid">
+                <h2>Facebook: <span style="font-family: Rajdhani, Gruppo">Elitsa Raycheva</span></h2>
+                <h2>Instagram: <span style="font-family: Rajdhani, Gruppo">elitzca</span></h2>
+                <h2>Gmail: <span style="font-family: Rajdhani, Gruppo">elitzcatr@gmail.com</span></h2>
+                
+            </div>
+            
+            
+            
+            
+            
+        <p id="space" style="padding-bottom: 1.7em"></p>   
+        </main>
+    
+<footer class="footer-grid"> 
+        <img src="design/compass-transparent.png" alt="My logo - 8 point compass rose">
+        <div class="footer-contacts">
+            <p style="margin-bottom: 8px"> Find me on: </p>
+            <p> Facebook: Elitsa Raycheva </p>
+            <p> Instagram: elitzca </p>
+            <p> Email: elitzcar@gmail.com </p>
+        </div>
+        <div>
+            <p id="copyrights"> &copy; 2018 Elitsa Raycheva, All rights reserved.</p>
+        </div>
+        
+    </footer>
+        
+        <script>
+            
+            let spinFirstImage = document.querySelector(".spin1"); 
+            spinFirstImage.addEventListener("mouseover", spinFirstFunction);
+            function spinFirstFunction (){
+                spinFirstImage.classList.add("rotate1");
+            }
+            
+            spinFirstImage.addEventListener("mouseout", spinFunctionx);
+            function spinFunctionx (){
+                spinFirstImage.classList.remove("rotate1");
+            }
+            
+            /**********************/
+            let spinSecondImage = document.querySelector(".spin2"); 
+            spinSecondImage.addEventListener("mouseover", spinSecondFunction);
+            function spinSecondFunction (){
+                spinSecondImage.classList.add("rotate2");
+            }
+            
+            spinSecondImage.addEventListener("mouseout", spinFunctiony);
+            function spinFunctiony (){
+                spinSecondImage.classList.remove("rotate2");
+            }
+            
+            /**********************/
+            let spinThirdImage = document.querySelector(".spin3"); 
+            spinThirdImage.addEventListener("mouseover", spinThirdFunction);
+            function spinThirdFunction (){
+                spinThirdImage.classList.add("rotate3");
+            }
+            
+            spinThirdImage.addEventListener("mouseout", spinFunctionz);
+            function spinFunctionz (){
+                spinThirdImage.classList.remove("rotate3");
+            }
+            
+            
+
+            
+        </script>
+    
+</body>
+</html>

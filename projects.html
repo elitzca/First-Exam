@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <title>Welcome to Elitsa's portfolio website</title>
+    <style>
+        
+        img {
+            width: 100%;
+            max-width: 25%;
+            padding: 3%;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            grid-gap: 3%;
+            width: 100%;
+            max-width: 75%;
+            padding: 4% 10% 4% 15%;
+            margin: 0;
+        }
+        
+        /*.grid-container a {
+            width: 8%;
+        }*/
+        
+        .parent img {
+              left:0;
+              -webkit-transition: opacity 1s ease-in-out;
+              -moz-transition: opacity 1s ease-in-out;
+              -o-transition: opacity 1s ease-in-out;
+              transition: opacity 1s ease-in-out;
+        }
+        
+        .parent img.top:hover {
+              opacity:0;
+        }
+        
+        .parent {
+            position: relative;
+            z-index: 0;
+        }
+        
+        .top {
+            position: absolute;
+        }
+        
+        ul {
+            z-index: 1;
+        }
+        
+        a img {
+            max-width: 400px;
+        }
+        
+        h1 {
+            font-size: 2.7em;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            padding-top: 9%;
+        }
+        
+        
+        /*tablet size */ 
+        @media screen and (max-width:1000px){
+            .grid-container {
+                grid-template-columns: auto auto;
+            }
+            
+            a img {
+            max-width: 300px;
+            }
+            
+            h1 {
+                font-size: 40px;
+            }
+        }
+        
+        /*phone size */ 
+        @media screen and (max-width:600px){
+            .grid-container {
+                grid-template-columns: auto;
+                max-width: 70%;
+                padding: 4% 13%;
+            }
+            
+            h1 {
+                font-size: 28px;
+                padding: 0;
+                padding-top: 25px;
+                padding-left: 40px;
+                margin: 0;
+            }
+         }
+        
+        @media screen and (max-width:550px){
+            #menuToggle {
+              display: block;
+              position: relative;
+              top: 7%;
+              left: 2%;
+
+              z-index: 1;
+
+              -webkit-user-select: none;
+              user-select: none;
+            }
+
+
+
+            .fixed-burger {
+                position: fixed;
+                top: 3%;
+                left: 3%;
+            }
+    }
+        
+        
+    </style>
+</head>
+
+    
+    
+<body>
+    
+    <nav>
+        <div id="menuToggle">
+            
+            <input type="checkbox" />
+        <div class="fixed-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="me.html">ABOUT ME</a></li>
+          <li class="dropdown">
+              <a href="projects.html" class="dropbtn" id="a1">PROJECTS</a>
+              <div class="dropdown-content">
+                  <a href="responsive-website.html">Responsive Website</a>
+                  <a href="redesigned-website.html">Redesigned Website</a>
+                  <a href="simple-anim.html">Simple Animation</a>
+                  <a href="sprite-sheet-anim.html">Sprite-sheet Animation</a>
+                  <a href="interactive-anim.html">Interactive animation</a>
+                  <a href="projectpool-1.html">ProjectPool 1</a>
+                  <a href="projectpool-2.html">ProjectPool 2</a>
+                  <a href="interactive-trailer.html">Interactive trailer</a>
+                  <a href="digital-business.html">Digital Business</a>
+                  <a href="video-1.html">Video 1: Urban living</a>
+                  <a href="video-2.html">Video 2: City walk</a>
+              </div>
+          </li>
+          <li><a href="contacts.html" id="a2">CONTACTS</a></li>
+        </ul>
+        </div>
+    </nav>     
+   
+    
+    <main>
+    
+    <h1> Projects 1st Semester </h1>    
+    
+    <div class="grid-container">
+        
+        <a href="responsive-website.html" class="parent">
+              <img class="top" src="images/a1.png" alt="Pictures from the theme">
+              <img class="bottom" src="images/a3.png" alt="Pictures from the theme">
+        </a>
+        
+        <a href="redesigned-website.html" class="parent">
+              <img class="top" src="images/b1.png" alt="Pictures from the theme">
+             <img class="bottom" src="images/b4.png" alt="Pictures from the theme">
+        </a>
+        
+        <a href="simple-anim.html" class="parent">
+              <img class="top" src="images/c1.png" alt="Pictures from the theme">
+              <img class="bottom" src="images/c2.png" alt="Pictures from the theme">
+        </a>
+        
+        <a href="sprite-sheet-anim.html" class="parent">
+              <img class="top" src="images/d1.png" alt="Pictures from the theme">
+              <img class="bottom" src="images/d2.png" alt="Pictures from the theme">
+        </a>
+        
+        <a href="interactive-anim.html" class="parent">
+              <img class="top" src="images/e1.png" alt="Pictures from the theme">
+              <img class="bottom" src="images/e2.gif" alt="Pictures from the theme">
+        </a>
+        
+        <a href="projectpool-1.html" class="parent">
+              <img class="top" src="images/f1.png" alt="Pictures from the theme">
+              <img class="bottom" src="images/f2.png" alt="Pictures from the theme">
+        </a>
+        
+        <a href="projectpool-2.html" class="parent">
+              <img class="top" src="images/g1.jpg" alt="Pictures from the theme">
+              <img class="bottom" src="images/g2.jpg" alt="Pictures from the theme">
+        </a>
+        
+        <a href="interactive-trailer.html" class="parent">
+              <img class="top" src="images/h1.png" alt="Pictures from the theme">
+              <img class="bottom" src="images/h2.png" alt="Pictures from the theme">
+        </a>
+        
+        <a href="digital-business.html" class="parent">
+              <img class="top" src="images/i1.jpg" alt="Pictures from the theme">
+              <img class="bottom" src="images/i2.jpg" alt="Pictures from the theme">
+        </a>
+        
+        <a href="video-1.html" class="parent">
+              <img class="top" src="images/j1.jpg" alt="Pictures from the theme">
+              <img class="bottom" src="images/j2.jpg" alt="Pictures from the theme">
+        </a>
+        
+        <a href="video-2.html" class="parent">
+              <img class="top" src="images/k1.jpg" alt="Pictures from the theme">
+              <img class="bottom" src="images/k2.jpg" alt="Pictures from the theme">
+        </a>
+        </div> 
+        
+    </main>
+    
+     <footer class="footer-grid"> 
+        <img src="design/compass-transparent.png" alt="My logo - 8 point compass rose">
+        <div class="footer-contacts">
+            <p style="margin-bottom: 8px"> Find me on: </p>
+            <p> Facebook: Elitsa Raycheva </p>
+            <p> Instagram: elitzca </p>
+            <p> Email: elitzcar@gmail.com </p>
+        </div>
+        <div>
+            <p id="copyrights"> &copy; 2018 Elitsa Raycheva, All rights reserved.</p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
